@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMI EDUVERSE टेस्ट</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>PMI EDUVERSE टेस्ट</h1>
+
+    <div class="login-section">
+      <label for="roll-number">रोल नंबर:</label>
+      <input type="text" id="roll-number" placeholder="रोल नंबर दर्ज करें">
+      <button id="start-test">टेस्ट शुरू करें</button>
+    </div>
+
+    <div class="test-section" id="test-section" style="display: none;">
+      <h2>टेस्ट शुरू हो चुका है!</h2>
+      <p id="timer">समय: 10:00</p>
+      <button id="submit-test">टेस्ट सबमिट करें</button>
+    </div>
+    
+    <div id="result" style="display: none;">
+      <h2>आपका परिणाम: <span id="score"></span></h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
