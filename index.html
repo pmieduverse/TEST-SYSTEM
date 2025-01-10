@@ -28,6 +28,26 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-database.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCxp_ZmfhwWX6pGGm0EXHvqMQgedtoh4yY",
+    authDomain: "pmi-eduverse-test-system.firebaseapp.com",
+    databaseURL: "https://pmi-eduverse-test-system-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "pmi-eduverse-test-system",
+    storageBucket: "pmi-eduverse-test-system.firebasestorage.app",
+    messagingSenderId: "501987575489",
+    appId: "1:501987575489:web:930b61e3ce28f9a3c37640",
+    measurementId: "G-6NK936W3MN"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+</script>
 </body>
 </html>
